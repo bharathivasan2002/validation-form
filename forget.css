@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.3) url('./images/wallpaperflare.com_wallpaper\ \(1\).jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+
+.forcontainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 650px;
+    width: 85vw;
+    background: rgba(73, 68, 68, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 18px;
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    /* border: 1px solid #DA6F1F; */
+    border: 1px solid #da701f8c;
+}
+
+.forget{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.forheading{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 10px 0px 30px 0px;
+}
+
+.forget .foruserbox{
+    width: 60vw;
+    position: relative;
+}
+
+.forget .foruserbox .forsignupinput{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding: 8px 0px 0px 0px ;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    font-size:16px;
+    color: #DA6F1F;
+    font-weight: 300; 
+    
+}
+.forget .foruserbox .forlab{
+    color: white;
+    margin: 20px 0px 20px 0px;
+    font-size:18px;
+    font-weight: 200;
+}
+
+.forget .foruserbox .forlab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+.forget .foruserbox .forsignupinput.has-value+.forlab,
+.forget .foruserbox .forsignupinput:focus+.forlab{
+    top: -20px;
+    transform: scale(0.9,0.9);
+}
+
+.forget .foruserbox .msgbarsignup{
+    position: absolute;
+    transform: translate(28px,-18px);
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+.foruserbox.success .forsignupinput{
+    border-color: green;
+}
+.foruserbox.error .forsignupinput{
+    border-color: red;
+}
+
+.forget .forgetbtn{
+   
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 50px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    transition:all 0.1s;
+}
+
+.forgetbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+.msgcontainer{
+    width: 100%;
+    height: 35px;
+    padding: 3px 15px;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0px auto 0px auto; 
+    transform: translateY(-60px);
+    background: linear-gradient(90deg, rgb(16, 96, 16) 0%, rgba(0,212,255,0) 100%);
+    color: white;
+}
+
+.errorlogo {
+   
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-27px,5px);
+  
+}
+.successlogo {
+
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-27px,5px);
+}
+
+.backbtn{
+    width: 15%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 50px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    transition:all 0.1s;
+}
+
+.backbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

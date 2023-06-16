@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="container" >
+        <div class="containerforloader" hidden>
+            <button class="refbtn" hidden>refresh</button>
+            <div class="loadheading" hidden>Something Went Worng Please Check Your Inernet Connection...</div>
+            <div class="anima" hidden></div>
+        </div>
+        <div class="signup">
+            <form action="#" class="signupform">
+                <div>
+                    <h2 class="heading">Sign Up</h2>
+                </div>
+                <div class="userbox">
+                    <input type="text" id="namesign" class="signupnameEl signupinput">
+                    <label for="namesign" class="signuplab">name</label>
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="userbox">
+                    <input type="email" id="emailsign" class="signupemailEl signupinput" >
+                    <label for="emailsign" class="signuplab">email</label>
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="userbox">
+                    <input type="password" id="passwordsign" class="signuppasswordEl signupinput" >
+                    <label for="passwordsign" class="signuplab">password</label>
+    
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="userbox">
+                    <input type="password" id="conformpasswordsign" class="signupconformpasswordEl signupinput" >
+                    <label for="conformpasswordsign" class="signuplab">conform password</label>
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="switchpage">
+                    <p>already have an account?<a href="#" class="atagsignup">here</a></p>
+                </div>
+                <div >
+                    <button class="signupbtn">Sign Up</button>
+                </div>
+               <div class="or">OR</div>
+                <div>
+                    <button class="googlebtn"><img src="./images/icons8-google-48.png" alt="" class="googleimg">Continue With Google</button>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="login" hidden>
+            <form action="#" class="loginform">
+                <div>
+                    <h2 class="headinglog">Login</h2>
+                </div>
+                <div class="loginbox">
+                    <input type="email" id="emaillog" class="loginemailEl logininput" >
+                    <label for="emaillog" class="loginlab">email</label>
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="loginbox">
+                    <input type="password" id="passwordlog" class="loginpasswordEl logininput" >
+                    <label for="passwordlog" class="loginlab">password</label>
+                    <p class="msgbarsignup"></p>
+                </div>
+                <div class="forget">
+                    <p><a href="#" class="forgetpasswordlogin">forget password</a></p>
+                </div>
+                <div class="switchlogin">
+                    <p>no account?<a href="#" class="ataglogin">here</a></p>
+                </div>
+                <div>
+                    <button class="loginbtn" >Log In</button>
+                </div>
+                <div class="or">OR</div>
+                <div>
+                    <button class="googlebtnlog"><span><img src="./images/icons8-google-48.png" alt="" class="googleimglog"></span> Continue With Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.3) url('./images/wallpaperflare.com_wallpaper\ \(1\).jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+.signup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 650px;
+    width: 85vw;
+    background: rgba(73, 68, 68, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 18px;
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    /* border: 1px solid #DA6F1F; */
+    border: 1px solid #da701f8c;
+}
+
+.heading{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 10px 0px 30px 0px;
+}
+
+.signup .userbox{
+    width: 60vw;
+    position: relative;
+}
+
+.signup .userbox .signupinput{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding: 8px 0px 0px 0px ;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    font-size:16px;
+    color: #DA6F1F;
+    font-weight: 300;
+}
+.signup .userbox .signuplab{
+    color: white;
+    margin: 20px 0px 20px 0px;
+    font-size:18px;
+    font-weight: 200;
+}
+
+.signup .userbox .signuplab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+.signup .userbox .signupinput.has-value+.signuplab,
+.signup .userbox .signupinput:focus+.signuplab{
+    top: -20px;
+    transform: scale(0.9,0.9);
+}
+
+.signup .userbox .msgbarsignup{
+    position: absolute;
+    transform: translate(28px,-18px);
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+.userbox.success .signupinput{
+    border-color: green;
+}
+.userbox.error .signupinput{
+    border-color: red;
+}
+
+
+.switchpage{
+    color: white;
+    margin: 15px 0px 10px 0px;
+}
+.switchpage a{
+    color:#DA6F1F;
+    margin: 0px 5px;
+}
+
+.signup .signupbtn{
+   
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 20px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    transition:all 0.1s;
+
+}
+
+.signupbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+.or{
+    color: white;
+    margin: 0px 50%;
+}
+
+.googlebtn{
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 15px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    transition:all 0.1s;
+}
+
+.googlebtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+.googleimg{
+    position: absolute;
+    transform: translate(-35px,-4px);
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+.headinglog{
+    color: white;
+    margin: 10px 0px 30px 0px;
+}
+
+.login .loginbox{
+    position: relative;
+    width: 60vw;
+}
+
+.login .loginbox .logininput{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    padding: 8px 0px 0px 0px ;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    font-size:16px;
+    color: #DA6F1F;
+    font-weight: 300;    
+}
+
+.login .loginbox .loginlab{
+    color: white;
+    margin: 20px 0px 20px 0px;
+    font-size:18px;
+    font-weight: 200;
+
+}
+
+.login .loginbox .loginlab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+
+.login .loginbox .logininput.has-value+.loginlab,
+.login .loginbox .logininput:focus+.loginlab{
+    top: -20px;
+    transform: scale(0.9,0.9);
+}
+
+
+.login .loginbox .msgbarsignup{
+    position: absolute;
+    transform: translate(28px,-18px);
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+.loginbox.success .logininput{
+    border-color: green;
+}
+.loginbox.error .logininput{
+    border-color: red;
+}
+
+
+
+.switchlogin{
+    color: aliceblue;
+    margin: 30px 0px 10px 0px;
+}
+.switchlogin a{
+    color:#DA6F1F;
+    margin: 0px 5px;
+}
+
+.forget{
+    margin: 10px 0px 20px 0px;
+}
+.forget a{
+    color:#DA6F1F;
+}
+
+.loginbtn {
+   
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 25px 0px 15px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    transition:all 0.1s;
+}
+
+.loginbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+
+.googlebtnlog{
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 15px 0px 20px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    transition:all 0.1s;
+}
+
+.googlebtnlog:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+.googleimglog{
+    position: absolute;
+    transform: translate(-35px,-4px);
+    width: 25px;
+    height: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.mainpage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90%;
+    width: 90%;
+    background: rgba(86, 83, 83, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+}
+
+.errorlogo {
+   
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-27px,5px);
+  
+}
+.successlogo {
+
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-27px,5px);
+}
+
+.signoutbtn{
+    width: 20%;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 15px 0px 20px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px;
+    transition:all 0.1s;
+}
+.signoutbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
+
+.mainpageheading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.containerforloader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anima{
+    width: 80px;
+    height: 80px;
+    background-color:transparent;
+    animation: loader 1s linear infinite;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    border-top: 3px solid #DA6F1F;
+    align-self: self-end;
+}
+
+@keyframes loader {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+
+
+.loadheading{
+    padding: 30px;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    transform: translateY(-100px);
+}
+
+.refbtn{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    padding: 7px 0px;
+    font-size: 16px;
+    margin: 70px 0px 0px 0px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    border: 1px solid #DA6F1F;
+    color: white;
+    background-color: transparent;
+    transition:all 0.1s;
+    font-weight: 200;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.refbtn:hover{
+    background-color: #b75002c5;
+    border: 1px solid white;
+}
