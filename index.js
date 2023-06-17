@@ -75,7 +75,7 @@
           }
         });
       }
-      else{s
+      else{
         e.preventDefault()
       }
     })
@@ -127,7 +127,7 @@
             unload()
         }
   });
-    })
+  })
 
 
 
@@ -411,7 +411,7 @@ const validateEmail = (email)=>{
     atagsignup.addEventListener('click',()=>{
       gsap.from(logincontainer, { duration: 1.5,
         ease: "elastic.out(1, 0.3)",
-        y: -300
+        y: -500
       });
       logincontainer.hidden=false
       signupcontainer.hidden=true

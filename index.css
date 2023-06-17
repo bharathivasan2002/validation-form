@@ -42,7 +42,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 650px;
+    height: 680px;
     width: 85vw;
     background: rgba(73, 68, 68, 0.3);
     box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 18px;
@@ -73,14 +73,14 @@ body{
     border-bottom: 1px solid white;
     padding: 8px 0px 0px 0px ;
     width: 100%;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 35px 0px;
     font-size:16px;
     color: #DA6F1F;
     font-weight: 300;
 }
 .signup .userbox .signuplab{
     color: white;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 35px 0px;
     font-size:18px;
     font-weight: 200;
 }
@@ -99,7 +99,7 @@ body{
 
 .signup .userbox .msgbarsignup{
     position: absolute;
-    transform: translate(28px,-18px);
+    transform: translate(28px,-29px);
     color: red;
     font-size: 15px;
     font-weight: 400;
@@ -114,7 +114,7 @@ body{
 
 .switchpage{
     color: white;
-    margin: 35px 0px 10px 0px;
+    margin: 25px 0px 10px 0px;
     font-weight: 300;
 }
 .switchpage a{
@@ -127,7 +127,7 @@ body{
     width: 100%;
     padding: 7px 0px;
     font-size: 16px;
-    margin: 20px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -152,7 +152,7 @@ body{
     width: 100%;
     padding: 7px 0px;
     font-size: 16px;
-    margin: 15px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -200,7 +200,7 @@ body{
     border-bottom: 1px solid white;
     padding: 8px 0px 0px 0px ;
     width: 100%;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 35px 0px;
     font-size:16px;
     color: #DA6F1F;
     font-weight: 300;    
@@ -208,7 +208,7 @@ body{
 
 .login .loginbox .loginlab{
     color: white;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 35px 0px;
     font-size:18px;
     font-weight: 200;
 
@@ -231,7 +231,7 @@ body{
 
 .login .loginbox .msgbarsignup{
     position: absolute;
-    transform: translate(28px,-18px);
+    transform: translate(28px,-33px);
     color: red;
     font-size: 15px;
     font-weight: 400;
@@ -266,7 +266,7 @@ body{
     width: 100%;
     padding: 7px 0px;
     font-size: 16px;
-    margin: 25px 0px 15px 0px;
+    margin: 25px 0px 10px 0px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -286,7 +286,7 @@ body{
     width: 100%;
     padding: 7px 0px;
     font-size: 16px;
-    margin: 15px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     border-radius: 5px;
     border: none;
     outline: none;
