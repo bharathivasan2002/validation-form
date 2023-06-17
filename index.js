@@ -81,34 +81,51 @@
     
 
     googlebtn.addEventListener('click',()=>{
-      signInWithPopup(auth, provider)
-      .then((result) => {
+      // signInWithPopup(auth, provider)
+      // .then((result) => {
          
-          // const credential = GoogleAuthProvider.credentialFromResult(result);
-          // const token = credential.accessToken;        
-                  // alert(user.displayName)
-                  // alert(user.email)
-                  // alert(user.photoURL)
+      //     // const credential = GoogleAuthProvider.credentialFromResult(result);
+      //     // const token = credential.accessToken;        
+      //             // alert(user.displayName)
+      //             // alert(user.email)
+      //             // alert(user.photoURL)
   
-          const user = result.user;
+      //     const user = result.user;
        
-          window.open('./mainpage.html','_self')
+      //     window.open('./mainpage.html','_self')
 
-        }).catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          const email = error.customData.email;
-          const credential = GoogleAuthProvider.credentialFromError(error);
-          console.log(errorCode);
+      //   }).catch((error) => {
+      //     const errorCode = error.code;
+      //     const errorMessage = error.message;
+      //     const email = error.customData.email;
+      //     const credential = GoogleAuthProvider.credentialFromError(error);
+      //     console.log(errorCode);
 
-          if(errorCode === 'auth/internal-error'){
+      //     if(errorCode === 'auth/internal-error'){
+      //       loading()
+      //     }
+      //     else{
+      //       unload()
+      //     }
+
+      //   });
+
+  signInWithRedirect(auth, provider);
+  getRedirectResult(auth)
+  .then((result) => {  
+    const user = result.user;
+    window.open('./mainpage.html','_self')
+
+  }).catch((error) => {
+    const errorCode = error.code;
+    console.log(errorCode);
+    if(errorCode === 'auth/internal-error'){
             loading()
-          }
-          else{
+      }
+    else{
             unload()
-          }
-
-        });
+        }
+  });
     })
 
 
@@ -262,32 +279,50 @@ loginbtn.addEventListener('click',(e)=>{
 
 
 googlebtnlog.addEventListener('click',()=>{
-  signInWithPopup(auth, provider)
-  .then((result) => {
+  // signInWithPopup(auth, provider)
+  // .then((result) => {
      
-      // const credential = GoogleAuthProvider.credentialFromResult(result);
-      // const token = credential.accessToken;        
-              // alert(user.displayName)
-              // alert(user.email)
-              // alert(user.photoURL)
+  //     // const credential = GoogleAuthProvider.credentialFromResult(result);
+  //     // const token = credential.accessToken;        
+  //             // alert(user.displayName)
+  //             // alert(user.email)
+  //             // alert(user.photoURL)
 
-      const user = result.user;
+  //     const user = result.user;
    
-      window.open('./mainpage.html','_self')
+  //     window.open('./mainpage.html','_self')
 
-    }).catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.customData.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
-      console.log(errorCode);
-      if(errorCode === 'auth/internal-error'){
-        loading()
+  //   }).catch((error) => {
+  //     const errorCode = error.code;
+  //     const errorMessage = error.message;
+  //     const email = error.customData.email;
+  //     const credential = GoogleAuthProvider.credentialFromError(error);
+  //     console.log(errorCode);
+  //     if(errorCode === 'auth/internal-error'){
+  //       loading()
+  //     }
+  //     else{
+  //       unload()
+  //     }
+  //   });
+
+  signInWithRedirect(auth, provider);
+  getRedirectResult(auth)
+  .then((result) => {  
+    const user = result.user;
+    window.open('./mainpage.html','_self')
+
+  }).catch((error) => {
+    const errorCode = error.code;
+    console.log(errorCode);
+    if(errorCode === 'auth/internal-error'){
+            loading()
       }
-      else{
-        unload()
-      }
-    });
+    else{
+            unload()
+        }
+  });
+
 })
 
 

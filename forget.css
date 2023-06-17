@@ -98,7 +98,7 @@ body{
     transform: translate(28px,-18px);
     color: red;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .foruserbox.success .forsignupinput{
     border-color: green;

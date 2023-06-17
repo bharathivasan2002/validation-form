@@ -58,7 +58,7 @@ body{
     font-weight: 300;
     font-size: 30px;
     letter-spacing: 5px;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .signup .userbox{
@@ -73,14 +73,14 @@ body{
     border-bottom: 1px solid white;
     padding: 8px 0px 0px 0px ;
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     font-size:16px;
     color: #DA6F1F;
     font-weight: 300;
 }
 .signup .userbox .signuplab{
     color: white;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     font-size:18px;
     font-weight: 200;
 }
@@ -102,7 +102,7 @@ body{
     transform: translate(28px,-18px);
     color: red;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .userbox.success .signupinput{
     border-color: green;
@@ -114,7 +114,8 @@ body{
 
 .switchpage{
     color: white;
-    margin: 15px 0px 10px 0px;
+    margin: 35px 0px 10px 0px;
+    font-weight: 300;
 }
 .switchpage a{
     color:#DA6F1F;
@@ -181,7 +182,10 @@ body{
 
 .headinglog{
     color: white;
-    margin: 10px 0px 30px 0px;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 10px 0px 10px 0px;
 }
 
 .login .loginbox{
@@ -196,7 +200,7 @@ body{
     border-bottom: 1px solid white;
     padding: 8px 0px 0px 0px ;
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     font-size:16px;
     color: #DA6F1F;
     font-weight: 300;    
@@ -204,7 +208,7 @@ body{
 
 .login .loginbox .loginlab{
     color: white;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     font-size:18px;
     font-weight: 200;
 
@@ -230,7 +234,7 @@ body{
     transform: translate(28px,-18px);
     color: red;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .loginbox.success .logininput{
     border-color: green;
@@ -243,7 +247,7 @@ body{
 
 .switchlogin{
     color: aliceblue;
-    margin: 30px 0px 10px 0px;
+    margin: 35px 0px 10px 0px;
 }
 .switchlogin a{
     color:#DA6F1F;
@@ -251,7 +255,7 @@ body{
 }
 
 .forget{
-    margin: 10px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
 }
 .forget a{
     color:#DA6F1F;
