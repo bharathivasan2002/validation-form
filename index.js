@@ -42,6 +42,7 @@
 
   
   signupbtn.addEventListener('click',(e)=>{
+    e.preventDefault()
     if(validation()){
       e.preventDefault()
       const emailauth=document.querySelector('.signupemailEl').value
