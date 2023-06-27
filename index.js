@@ -81,52 +81,53 @@
     })
     
 
-    googlebtn.addEventListener('click',()=>{
-      // signInWithPopup(auth, provider)
-      // .then((result) => {
+    googlebtn.addEventListener('click',(e)=>{
+      
+      signInWithPopup(auth, provider)
+      .then((result) => {
          
-      //     // const credential = GoogleAuthProvider.credentialFromResult(result);
-      //     // const token = credential.accessToken;        
-      //             // alert(user.displayName)
-      //             // alert(user.email)
-      //             // alert(user.photoURL)
+          // const credential = GoogleAuthProvider.credentialFromResult(result);
+          // const token = credential.accessToken;        
+                  // alert(user.displayName)
+                  // alert(user.email)
+                  // alert(user.photoURL)
   
-      //     const user = result.user;
+          const user = result.user;
        
-      //     window.open('./mainpage.html','_self')
+          window.open('./mainpage.html','_self')
 
-      //   }).catch((error) => {
-      //     const errorCode = error.code;
-      //     const errorMessage = error.message;
-      //     const email = error.customData.email;
-      //     const credential = GoogleAuthProvider.credentialFromError(error);
-      //     console.log(errorCode);
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.customData.email;
+          const credential = GoogleAuthProvider.credentialFromError(error);
+          console.log(errorCode);
 
-      //     if(errorCode === 'auth/internal-error'){
-      //       loading()
-      //     }
-      //     else{
-      //       unload()
-      //     }
-
-      //   });
-
-  signInWithRedirect(auth, provider);
-  getRedirectResult(auth)
-  .then((result) => {  
-    const user = result.user;
-    window.open('./mainpage.html','_self')
-
-  }).catch((error) => {
-    const errorCode = error.code;
-    console.log(errorCode);
-    if(errorCode === 'auth/internal-error'){
+          if(errorCode === 'auth/internal-error'){
             loading()
-      }
-    else{
+          }
+          else{
             unload()
-        }
-  });
+          }
+
+        });
+
+  // signInWithRedirect(auth, provider);
+  // getRedirectResult(auth)
+  // .then((result) => {  
+  //   const user = result.user;
+  //   window.open('./mainpage.html','_self')
+
+  // }).catch((error) => {
+  //   const errorCode = error.code;
+  //   console.log(errorCode);
+  //   if(errorCode === 'auth/internal-error'){
+  //           loading()
+  //     }
+  //   else{
+  //           unload()
+  //       }
+  // });
   })
 
 
@@ -410,8 +411,9 @@ const validateEmail = (email)=>{
 // ---------------------------------------------------------------------------------
     atagsignup.addEventListener('click',()=>{
       gsap.from(logincontainer, { duration: 1.5,
-        ease: "elastic.out(1, 0.3)",
-        y: -500
+        // ease: "elastic.out(1, 0.3)",
+        ease: "bounce.out",
+        y: -200
       });
       logincontainer.hidden=false
       signupcontainer.hidden=true
@@ -419,7 +421,8 @@ const validateEmail = (email)=>{
     
     ataglogin.addEventListener('click',()=>{
       gsap.from(signupcontainer, { duration: 1.5,
-        ease: "elastic.out(1, 0.3)",
+        // ease: "elastic.out(1, 0.3)",
+        ease: "bounce.out",
         y: -300
       });
       logincontainer.hidden=true

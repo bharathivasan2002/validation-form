@@ -33,7 +33,7 @@ forgetbtn.addEventListener('click',(e)=>{
   .then(() => {
     msganima()
     msgcontainer.innerHTML="Link Is Sended To Your Email-id Please Check And Change Your Password"
-    msgcontainer.style.height = '65px'
+    // msgcontainer.style.height = '65px'
     msgcontainer.hidden = false
     // setInterval(() => {
     //   window.open('./index.html','_self')
@@ -57,7 +57,7 @@ forgetbtn.addEventListener('click',(e)=>{
     if(errorCode === 'auth/network-request-failed'){
       msganima()
       msgcontainer.innerHTML="Something Went Worng Please Check Your Inernet Connection..."
-      msgcontainer.style.height = '65px'
+      // msgcontainer.style.height = '65px'
       msgcontainer.style.background ='linear-gradient(90deg, rgb(136, 7, 7) 0%, rgba(0,212,255,0) 100%)'
       msgcontainer.hidden = false
     }
@@ -84,7 +84,8 @@ forsignupinput.addEventListener('input',(e)=>{
 
 function loaded(){
   gsap.from(forget, { duration: 1.5,
-    ease: "elastic.out(1, 0.3)",
+    // ease: "elastic.out(1, 0.3)",
+    ease: "bounce.out",
     y: -300
   });
 }
